@@ -1,0 +1,10 @@
+08:39:59 **** Incremental Build of configuration Debug for project Week3 GPIO ****
+make -j4 all 
+arm-none-eabi-gcc -o "Week3 GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\2_63\FRA222_Microcontroller Interface\LAB\Week3-GPIO\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Week3 GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o: file not recognized: File truncated
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:58: Week3 GPIO.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+08:40:00 Build Failed. 1 errors, 0 warnings. (took 898ms)
+
